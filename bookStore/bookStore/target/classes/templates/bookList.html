@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+  <head>
+   
+  </head>
+  <body>
+   
+ 
+  <div>
+  		<table>
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="b :${book}">
+      <td th:text="${b.id}"></td>
+      <td th:text="${b.name}"></td>
+     
+      
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+  
+  </body>
+</html>
